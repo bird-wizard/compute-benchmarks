@@ -1,0 +1,9 @@
+./api_overhead_benchmark_ocl >> api_overhead_benchmark_ocl_sept15.txt
+./atomic_benchmark_ocl >> atomic_benchmark_ocl_sept15.txt
+./emu_benchmark_ocl >> emu_benchmark_ocl_sept15.txt
+./memory_benchmark_ocl >> memory_benchmark_ocl_sept15.txt
+./miscellaneous_benchmark_ocl >> miscellaneous_benchmark_ocl_sept15.txt
+./multiprocess_benchmark_ocl >> multiprocess_benchmark_ocl_sept15.txt
+./multithread_benchmark_ocl >> multithread_benchmark_ocl_sept15.txt
+./multitile_memory_benchmark_ocl >> multitile_memory_benchmark_ocl_sept15.txt
+./show_devices_ocl >> show_devices_ocl_sept15.txt 

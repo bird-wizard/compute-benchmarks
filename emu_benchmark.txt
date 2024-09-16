@@ -1,0 +1,58 @@
+OpenCL Platform: ARM Platform
+	Device: Mali-G710 r0p0
+		driverVersion: 3.0
+		computeUnits:  7
+		clockFreq:     5
+
+Running 10 iterations of each benchmark
+
+                                                     TestCase           Mean         Median         StdDev            Min            Max   Type   Label [unit]
+                   Int64Div(api=ocl wgc=1 wgs=64 useEvents=1)                                        ERROR
+                  Int64Div(api=ocl wgc=1 wgs=128 useEvents=1)                                        ERROR
+                  Int64Div(api=ocl wgc=1 wgs=256 useEvents=1)                                        ERROR
+                  Int64Div(api=ocl wgc=1 wgs=512 useEvents=1)                                        ERROR
+                 Int64Div(api=ocl wgc=128 wgs=64 useEvents=1)                                        ERROR
+                Int64Div(api=ocl wgc=128 wgs=128 useEvents=1)                                        ERROR
+                Int64Div(api=ocl wgc=128 wgs=256 useEvents=1)                                        ERROR
+                Int64Div(api=ocl wgc=128 wgs=512 useEvents=1)                                        ERROR
+
+[  FAILED  ] Int64DivTest/Int64DivTest.Test/0
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 2, sizeof(loopIterations), &loopIterations))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/emu_benchmark/implementations/ocl/int64_div.cpp:62
+
+[  FAILED  ] Int64DivTest/Int64DivTest.Test/1
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 2, sizeof(loopIterations), &loopIterations))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/emu_benchmark/implementations/ocl/int64_div.cpp:62
+
+[  FAILED  ] Int64DivTest/Int64DivTest.Test/2
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 2, sizeof(loopIterations), &loopIterations))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/emu_benchmark/implementations/ocl/int64_div.cpp:62
+
+[  FAILED  ] Int64DivTest/Int64DivTest.Test/3
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 2, sizeof(loopIterations), &loopIterations))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/emu_benchmark/implementations/ocl/int64_div.cpp:62
+
+[  FAILED  ] Int64DivTest/Int64DivTest.Test/4
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 2, sizeof(loopIterations), &loopIterations))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/emu_benchmark/implementations/ocl/int64_div.cpp:62
+
+[  FAILED  ] Int64DivTest/Int64DivTest.Test/5
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 2, sizeof(loopIterations), &loopIterations))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/emu_benchmark/implementations/ocl/int64_div.cpp:62
+
+[  FAILED  ] Int64DivTest/Int64DivTest.Test/6
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 2, sizeof(loopIterations), &loopIterations))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/emu_benchmark/implementations/ocl/int64_div.cpp:62
+
+[  FAILED  ] Int64DivTest/Int64DivTest.Test/7
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 2, sizeof(loopIterations), &loopIterations))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/emu_benchmark/implementations/ocl/int64_div.cpp:62
+

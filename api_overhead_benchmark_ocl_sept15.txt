@@ -1,0 +1,352 @@
+OpenCL Platform: ARM Platform
+	Device: Mali-G710 r0p0
+		driverVersion: 3.0
+		computeUnits:  7
+		clockFreq:     5
+
+Running 10 iterations of each benchmark
+
+                                                                                                                          TestCase           Mean         Median         StdDev            Min            Max   Type   Label [unit]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=0 readOnly=0 copyHostPtr=0 forceHostMemoryIntel=0)          1.318          1.079         48.34%          1.017          3.214  [CPU]           [us]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=0 readOnly=0 copyHostPtr=0 forceHostMemoryIntel=1)                                        ERROR
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=0 readOnly=0 copyHostPtr=1 forceHostMemoryIntel=0)          3.145          2.645         26.90%          2.320          4.720  [CPU]           [us]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=0 readOnly=0 copyHostPtr=1 forceHostMemoryIntel=1)                                        ERROR
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=0 readOnly=1 copyHostPtr=0 forceHostMemoryIntel=0)          1.933          1.852         20.70%          1.506          2.564  [CPU]           [us]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=0 readOnly=1 copyHostPtr=0 forceHostMemoryIntel=1)                                        ERROR
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=0 readOnly=1 copyHostPtr=1 forceHostMemoryIntel=0)          2.661          2.502         13.46%          2.238          3.418  [CPU]           [us]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=0 readOnly=1 copyHostPtr=1 forceHostMemoryIntel=1)                                        ERROR
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=1 readOnly=0 copyHostPtr=0 forceHostMemoryIntel=0)          7.328          5.697         53.83%          3.581         17.904  [CPU]           [us]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=1 readOnly=0 copyHostPtr=0 forceHostMemoryIntel=1)                                        ERROR
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=1 readOnly=0 copyHostPtr=1 forceHostMemoryIntel=0)          4.187          4.617         22.68%          2.726          5.208  [CPU]           [us]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=1 readOnly=0 copyHostPtr=1 forceHostMemoryIntel=1)                                        ERROR
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=1 readOnly=1 copyHostPtr=0 forceHostMemoryIntel=0)          1.904          1.831         20.13%          1.505          2.767  [CPU]           [us]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=1 readOnly=1 copyHostPtr=0 forceHostMemoryIntel=1)                                        ERROR
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=1 readOnly=1 copyHostPtr=1 forceHostMemoryIntel=0)          2.726          2.523         28.79%          1.953          4.435  [CPU]           [us]
+                                 CreateBuffer(api=ocl bufferSize=64 allocateAll=1 readOnly=1 copyHostPtr=1 forceHostMemoryIntel=1)                                        ERROR
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=0 readOnly=0 copyHostPtr=0 forceHostMemoryIntel=0)          1.790          1.343         46.52%          1.261          3.824  [CPU]           [us]
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=0 readOnly=0 copyHostPtr=0 forceHostMemoryIntel=1)                                        ERROR
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=0 readOnly=0 copyHostPtr=1 forceHostMemoryIntel=0)          3.727          3.724          4.72%          3.377          3.988  [CPU]           [us]
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=0 readOnly=0 copyHostPtr=1 forceHostMemoryIntel=1)                                        ERROR
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=0 readOnly=1 copyHostPtr=0 forceHostMemoryIntel=0)          1.424          1.302         22.90%          1.302          2.401  [CPU]           [us]
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=0 readOnly=1 copyHostPtr=0 forceHostMemoryIntel=1)                                        ERROR
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=0 readOnly=1 copyHostPtr=1 forceHostMemoryIntel=0)          3.585          3.581          3.49%          3.378          3.825  [CPU]           [us]
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=0 readOnly=1 copyHostPtr=1 forceHostMemoryIntel=1)                                        ERROR
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=1 readOnly=0 copyHostPtr=0 forceHostMemoryIntel=0)          2.515          2.563         13.21%          1.913          3.052  [CPU]           [us]
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=1 readOnly=0 copyHostPtr=0 forceHostMemoryIntel=1)                                        ERROR
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=1 readOnly=0 copyHostPtr=1 forceHostMemoryIntel=0)          5.294          5.188          7.43%          4.761          5.900  [CPU]           [us]
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=1 readOnly=0 copyHostPtr=1 forceHostMemoryIntel=1)                                        ERROR
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=1 readOnly=1 copyHostPtr=0 forceHostMemoryIntel=0)          3.015          2.828         12.68%          2.767          3.947  [CPU]           [us]
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=1 readOnly=1 copyHostPtr=0 forceHostMemoryIntel=1)                                        ERROR
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=1 readOnly=1 copyHostPtr=1 forceHostMemoryIntel=0)          4.753          4.740          4.51%          4.395          5.249  [CPU]           [us]
+                              CreateBuffer(api=ocl bufferSize=10240 allocateAll=1 readOnly=1 copyHostPtr=1 forceHostMemoryIntel=1)                                        ERROR
+                                                                        EnqueueNdrNullLws(api=ocl gws=1 ooq=0 profiling=0 event=0)          8.358          7.508         34.31%          6.185         16.113  [CPU]           [us]
+                                                                        EnqueueNdrNullLws(api=ocl gws=1 ooq=0 profiling=0 event=1)         12.020          8.281        102.53%          4.679         47.770  [CPU]           [us]
+                                                                        EnqueueNdrNullLws(api=ocl gws=1 ooq=0 profiling=1 event=0)          5.403          4.944         20.71%          4.476          8.504  [CPU]           [us]
+                                                                        EnqueueNdrNullLws(api=ocl gws=1 ooq=0 profiling=1 event=1)          5.355          5.005         15.68%          4.842          7.731  [CPU]           [us]
+                                                                        EnqueueNdrNullLws(api=ocl gws=1 ooq=1 profiling=0 event=0)          5.155          4.863         21.76%          4.394          8.382  [CPU]           [us]
+                                                                        EnqueueNdrNullLws(api=ocl gws=1 ooq=1 profiling=0 event=1)          5.155          4.436         37.84%          3.987         10.824  [CPU]           [us]
+                                                                        EnqueueNdrNullLws(api=ocl gws=1 ooq=1 profiling=1 event=0)          6.279          5.758         21.48%          5.371          9.970  [CPU]           [us]
+                                                                        EnqueueNdrNullLws(api=ocl gws=1 ooq=1 profiling=1 event=1)          4.578          4.455         17.47%          3.907          6.795  [CPU]           [us]
+                                                                      EnqueueNdrNullLws(api=ocl gws=100 ooq=0 profiling=0 event=0)          5.241          4.720         18.87%          4.435          7.690  [CPU]           [us]
+                                                                      EnqueueNdrNullLws(api=ocl gws=100 ooq=0 profiling=0 event=1)          3.930          3.540         26.33%          3.214          6.835  [CPU]           [us]
+                                                                      EnqueueNdrNullLws(api=ocl gws=100 ooq=0 profiling=1 event=0)          4.798          4.598         15.58%          4.273          6.958  [CPU]           [us]
+                                                                      EnqueueNdrNullLws(api=ocl gws=100 ooq=0 profiling=1 event=1)          4.391          4.191         16.19%          3.743          6.389  [CPU]           [us]
+                                                                      EnqueueNdrNullLws(api=ocl gws=100 ooq=1 profiling=0 event=0)          5.273          4.557         36.13%          4.151         10.824  [CPU]           [us]
+                                                                      EnqueueNdrNullLws(api=ocl gws=100 ooq=1 profiling=0 event=1)          6.226          4.415         49.46%          3.865         12.939  [CPU]           [us]
+                                                                      EnqueueNdrNullLws(api=ocl gws=100 ooq=1 profiling=1 event=0)          4.631          4.415         21.89%          3.866          7.568  [CPU]           [us]
+                                                                      EnqueueNdrNullLws(api=ocl gws=100 ooq=1 profiling=1 event=1)          5.237          4.985         21.57%          4.110          8.057  [CPU]           [us]
+                                                                     EnqueueNdrNullLws(api=ocl gws=1000 ooq=0 profiling=0 event=0)          4.643          4.415         18.15%          3.947          7.080  [CPU]           [us]
+                                                                     EnqueueNdrNullLws(api=ocl gws=1000 ooq=0 profiling=0 event=1)          4.643          4.333         18.98%          4.028          7.202  [CPU]           [us]
+                                                                     EnqueueNdrNullLws(api=ocl gws=1000 ooq=0 profiling=1 event=0)          5.733          5.331         19.76%          4.801          8.220  [CPU]           [us]
+                                                                     EnqueueNdrNullLws(api=ocl gws=1000 ooq=0 profiling=1 event=1)          4.826          4.496         20.90%          4.191          7.813  [CPU]           [us]
+                                                                     EnqueueNdrNullLws(api=ocl gws=1000 ooq=1 profiling=0 event=0)          5.058          4.618         22.38%          4.475          8.382  [CPU]           [us]
+                                                                     EnqueueNdrNullLws(api=ocl gws=1000 ooq=1 profiling=0 event=1)          5.505          4.436         45.25%          3.784         11.149  [CPU]           [us]
+                                                                     EnqueueNdrNullLws(api=ocl gws=1000 ooq=1 profiling=1 event=0)          4.887          4.232         23.87%          3.907          7.487  [CPU]           [us]
+                                                                     EnqueueNdrNullLws(api=ocl gws=1000 ooq=1 profiling=1 event=1)          6.356          4.679         53.15%          4.313         14.811  [CPU]           [us]
+                                                                     EnqueueNdrTime(api=ocl wgc=1 wgs=1 ooq=0 profiling=0 event=0)          4.513          4.110         24.23%          3.703          7.650  [CPU]           [us]
+                                                                     EnqueueNdrTime(api=ocl wgc=1 wgs=1 ooq=0 profiling=0 event=1)          4.451          3.641         35.17%          3.296          8.627  [CPU]           [us]
+                                                                     EnqueueNdrTime(api=ocl wgc=1 wgs=1 ooq=0 profiling=1 event=0)          4.671          4.333         22.08%          3.947          7.650  [CPU]           [us]
+                                                                     EnqueueNdrTime(api=ocl wgc=1 wgs=1 ooq=0 profiling=1 event=1)          4.048          3.744         26.63%          3.336          7.161  [CPU]           [us]
+                                                                     EnqueueNdrTime(api=ocl wgc=1 wgs=1 ooq=1 profiling=0 event=0)          4.818          4.191         29.36%          3.784          8.790  [CPU]           [us]
+                                                                     EnqueueNdrTime(api=ocl wgc=1 wgs=1 ooq=1 profiling=0 event=1)          4.317          3.987         23.65%          3.540          7.243  [CPU]           [us]
+                                                                     EnqueueNdrTime(api=ocl wgc=1 wgs=1 ooq=1 profiling=1 event=0)          6.466          5.330         39.88%          4.761         12.858  [CPU]           [us]
+                                                                     EnqueueNdrTime(api=ocl wgc=1 wgs=1 ooq=1 profiling=1 event=1)          5.274          4.985         12.72%          4.638          6.754  [CPU]           [us]
+                                                                    EnqueueNdrTime(api=ocl wgc=1 wgs=32 ooq=0 profiling=0 event=0)          5.876          4.171         53.34%          3.215         10.905  [CPU]           [us]
+                                                                    EnqueueNdrTime(api=ocl wgc=1 wgs=32 ooq=0 profiling=0 event=1)          5.623          4.211         47.20%          3.500         10.335  [CPU]           [us]
+                                                                    EnqueueNdrTime(api=ocl wgc=1 wgs=32 ooq=0 profiling=1 event=0)          4.313          4.171         10.91%          3.987          5.697  [CPU]           [us]
+                                                                    EnqueueNdrTime(api=ocl wgc=1 wgs=32 ooq=0 profiling=1 event=1)          4.508          4.333         12.39%          3.946          5.493  [CPU]           [us]
+                                                                    EnqueueNdrTime(api=ocl wgc=1 wgs=32 ooq=1 profiling=0 event=0)          4.756          4.577         16.68%          3.743          6.754  [CPU]           [us]
+                                                                    EnqueueNdrTime(api=ocl wgc=1 wgs=32 ooq=1 profiling=0 event=1)          5.192          4.109         44.71%          3.621          9.969  [CPU]           [us]
+                                                                    EnqueueNdrTime(api=ocl wgc=1 wgs=32 ooq=1 profiling=1 event=0)          5.953          4.516         43.35%          4.191         11.760  [CPU]           [us]
+                                                                    EnqueueNdrTime(api=ocl wgc=1 wgs=32 ooq=1 profiling=1 event=1)          6.055          4.638         41.53%          4.191         11.109  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=1 wgs=256 ooq=0 profiling=0 event=0)          5.326          4.883         26.03%          4.517          9.440  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=1 wgs=256 ooq=0 profiling=0 event=1)          4.073          3.744         21.66%          3.337          6.388  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=1 wgs=256 ooq=0 profiling=1 event=0)          5.794          5.554         21.81%          4.720          9.481  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=1 wgs=256 ooq=0 profiling=1 event=1)          5.526          4.333         45.89%          3.947         11.637  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=1 wgs=256 ooq=1 profiling=0 event=0)          5.371          4.720         24.32%          4.354          8.749  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=1 wgs=256 ooq=1 profiling=0 event=1)          3.768          3.520         19.89%          3.215          5.900  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=1 wgs=256 ooq=1 profiling=1 event=0)          4.525          4.252         19.39%          3.947          7.080  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=1 wgs=256 ooq=1 profiling=1 event=1)          6.649          4.740         51.54%          3.988         13.591  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=100 wgs=1 ooq=0 profiling=0 event=0)          6.486          5.025         45.17%          3.906         12.696  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=100 wgs=1 ooq=0 profiling=0 event=1)          4.431          4.089         21.89%          3.662          7.080  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=100 wgs=1 ooq=0 profiling=1 event=0)          6.502          5.208         36.03%          4.476         10.213  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=100 wgs=1 ooq=0 profiling=1 event=1)          5.501          4.191         44.71%          3.458         10.498  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=100 wgs=1 ooq=1 profiling=0 event=0)          4.000          3.785         18.35%          3.499          6.144  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=100 wgs=1 ooq=1 profiling=0 event=1)          4.598          4.619         12.73%          3.540          5.412  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=100 wgs=1 ooq=1 profiling=1 event=0)          5.404          5.127         26.37%          3.825          8.423  [CPU]           [us]
+                                                                   EnqueueNdrTime(api=ocl wgc=100 wgs=1 ooq=1 profiling=1 event=1)          5.510          4.781         33.87%          4.395         10.946  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=100 wgs=32 ooq=0 profiling=0 event=0)          4.008          3.845         15.22%          3.581          5.778  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=100 wgs=32 ooq=0 profiling=0 event=1)          4.496          3.967         37.42%          3.378          9.481  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=100 wgs=32 ooq=0 profiling=1 event=0)          4.663          4.130         29.33%          3.866          8.627  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=100 wgs=32 ooq=0 profiling=1 event=1)          4.024          3.459         29.70%          3.255          7.365  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=100 wgs=32 ooq=1 profiling=0 event=0)          4.317          3.907         29.79%          3.581          8.057  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=100 wgs=32 ooq=1 profiling=0 event=1)          4.513          3.744         41.60%          3.377          9.969  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=100 wgs=32 ooq=1 profiling=1 event=0)          4.691          4.191         27.28%          3.865          8.341  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=100 wgs=32 ooq=1 profiling=1 event=1)          4.301          3.987         23.98%          3.499          7.202  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=100 wgs=256 ooq=0 profiling=0 event=0)          5.159          4.639         33.66%          4.028         10.050  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=100 wgs=256 ooq=0 profiling=0 event=1)          5.375          4.842         17.85%          4.638          7.406  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=100 wgs=256 ooq=0 profiling=1 event=0)          5.648          4.781         37.31%          4.395         11.759  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=100 wgs=256 ooq=0 profiling=1 event=1)          4.793          4.476         28.43%          3.336          7.812  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=100 wgs=256 ooq=1 profiling=0 event=0)          5.485          4.354         41.31%          4.069         11.596  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=100 wgs=256 ooq=1 profiling=0 event=1)          5.969          4.293         47.71%          3.703         11.352  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=100 wgs=256 ooq=1 profiling=1 event=0)          5.749          5.330         21.38%          4.761          9.155  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=100 wgs=256 ooq=1 profiling=1 event=1)          4.883          4.435         22.46%          4.191          8.057  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=1000 wgs=1 ooq=0 profiling=0 event=0)          7.048          4.801         47.09%          3.906         12.696  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=1000 wgs=1 ooq=0 profiling=0 event=1)          4.342          3.784         32.65%          3.093          7.894  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=1000 wgs=1 ooq=0 profiling=1 event=0)          4.773          4.537         21.61%          3.784          7.650  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=1000 wgs=1 ooq=0 profiling=1 event=1)          4.195          3.763         29.53%          3.458          7.812  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=1000 wgs=1 ooq=1 profiling=0 event=0)          7.528          5.738         43.75%          4.069         13.020  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=1000 wgs=1 ooq=1 profiling=0 event=1)          5.091          4.232         34.50%          3.663          8.870  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=1000 wgs=1 ooq=1 profiling=1 event=0)          5.416          4.700         36.44%          4.598         11.312  [CPU]           [us]
+                                                                  EnqueueNdrTime(api=ocl wgc=1000 wgs=1 ooq=1 profiling=1 event=1)          5.070          4.578         34.78%          3.500          9.685  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=1000 wgs=32 ooq=0 profiling=0 event=0)          5.351          4.923         23.98%          4.598          9.074  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=1000 wgs=32 ooq=0 profiling=0 event=1)          4.691          4.436         20.07%          3.662          6.673  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=1000 wgs=32 ooq=0 profiling=1 event=0)          6.299          5.188         39.89%          4.516         12.248  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=1000 wgs=32 ooq=0 profiling=1 event=1)          4.622          4.211         23.42%          3.703          7.446  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=1000 wgs=32 ooq=1 profiling=0 event=0)          4.704          4.232         25.12%          4.028          8.097  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=1000 wgs=32 ooq=1 profiling=0 event=1)          4.134          3.885         22.01%          3.458          6.755  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=1000 wgs=32 ooq=1 profiling=1 event=0)          4.981          4.761         19.59%          3.947          7.487  [CPU]           [us]
+                                                                 EnqueueNdrTime(api=ocl wgc=1000 wgs=32 ooq=1 profiling=1 event=1)          4.378          3.805         34.47%          3.459          8.748  [CPU]           [us]
+                                                                EnqueueNdrTime(api=ocl wgc=1000 wgs=256 ooq=0 profiling=0 event=0)          4.565          4.272         24.78%          3.662          7.894  [CPU]           [us]
+                                                                EnqueueNdrTime(api=ocl wgc=1000 wgs=256 ooq=0 profiling=0 event=1)          4.728          4.232         29.64%          3.581          8.260  [CPU]           [us]
+                                                                EnqueueNdrTime(api=ocl wgc=1000 wgs=256 ooq=0 profiling=1 event=0)          4.814          4.375         24.94%          4.069          8.301  [CPU]           [us]
+                                                                EnqueueNdrTime(api=ocl wgc=1000 wgs=256 ooq=0 profiling=1 event=1)          7.088          6.612         37.25%          4.232         11.434  [CPU]           [us]
+                                                                EnqueueNdrTime(api=ocl wgc=1000 wgs=256 ooq=1 profiling=0 event=0)          6.510          4.720         47.09%          4.109         12.085  [CPU]           [us]
+                                                                EnqueueNdrTime(api=ocl wgc=1000 wgs=256 ooq=1 profiling=0 event=1)          3.809          3.255         30.74%          3.174          7.202  [CPU]           [us]
+                                                                EnqueueNdrTime(api=ocl wgc=1000 wgs=256 ooq=1 profiling=1 event=0)          6.454          4.659         48.66%          4.029         12.655  [CPU]           [us]
+                                                                EnqueueNdrTime(api=ocl wgc=1000 wgs=256 ooq=1 profiling=1 event=1)          4.256          3.947         21.80%          3.581          6.917  [CPU]           [us]
+                                                                       FlushTime(api=ocl wgc=1 wgs=0 ooq=0 event=0 flushCount=100)       4007.257       3784.588         52.72%       1562.130       6921.225  [CPU]           [us]
+                                                                       FlushTime(api=ocl wgc=1 wgs=0 ooq=0 event=1 flushCount=100)       7904.551       7885.412          7.28%       7001.011       9220.502  [CPU]           [us]
+                                                                       FlushTime(api=ocl wgc=1 wgs=0 ooq=1 event=0 flushCount=100)       5539.343       5515.219         16.23%       4236.971       7723.714  [CPU]           [us]
+                                                                       FlushTime(api=ocl wgc=1 wgs=0 ooq=1 event=1 flushCount=100)       5664.067       5815.309          8.07%       4701.295       6111.613  [CPU]           [us]
+                                                                       FlushTime(api=ocl wgc=1 wgs=1 ooq=0 event=0 flushCount=100)       8156.562       8463.320         20.78%       4095.536      10370.201  [CPU]           [us]
+                                                                       FlushTime(api=ocl wgc=1 wgs=1 ooq=0 event=1 flushCount=100)       5854.542       5814.593         12.11%       4879.238       7702.679  [CPU]           [us]
+                                                                       FlushTime(api=ocl wgc=1 wgs=1 ooq=1 event=0 flushCount=100)       7004.225       6865.830          9.64%       6192.954       8289.474  [CPU]           [us]
+                                                                       FlushTime(api=ocl wgc=1 wgs=1 ooq=1 event=1 flushCount=100)       9957.841       9034.261         25.67%       6923.950      15287.479  [CPU]           [us]
+                                                                      FlushTime(api=ocl wgc=1 wgs=32 ooq=0 event=0 flushCount=100)       7687.937       6524.193         46.50%       6055.631      18364.265  [CPU]           [us]
+                                                                      FlushTime(api=ocl wgc=1 wgs=32 ooq=0 event=1 flushCount=100)       8170.455       7513.347         23.38%       6438.395      13313.476  [CPU]           [us]
+                                                                      FlushTime(api=ocl wgc=1 wgs=32 ooq=1 event=0 flushCount=100)       7984.050       8245.672         18.27%       4857.821      10717.077  [CPU]           [us]
+                                                                      FlushTime(api=ocl wgc=1 wgs=32 ooq=1 event=1 flushCount=100)       7324.634       6629.840         23.06%       5607.424      11600.788  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=1 wgs=256 ooq=0 event=0 flushCount=100)       6681.983       6636.475         15.04%       4962.444       8774.015  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=1 wgs=256 ooq=0 event=1 flushCount=100)       5837.980       6000.328         17.14%       3652.102       7159.418  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=1 wgs=256 ooq=1 event=0 flushCount=100)       7812.448       7287.877         17.52%       6192.460      10156.176  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=1 wgs=256 ooq=1 event=1 flushCount=100)       7612.538       7546.787         21.10%       5218.257      10358.472  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=100 wgs=0 ooq=0 event=0 flushCount=100)       7356.225       8097.860         22.46%       3609.255       9012.773  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=100 wgs=0 ooq=0 event=1 flushCount=100)       6339.858       5675.838         26.61%       4633.173      10412.635  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=100 wgs=0 ooq=1 event=0 flushCount=100)       5577.494       5813.210         24.00%       3371.093       7341.828  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=100 wgs=0 ooq=1 event=1 flushCount=100)       5207.582       5508.243         18.33%       3082.229       6245.194  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=100 wgs=1 ooq=0 event=0 flushCount=100)       6289.054       5709.615         38.63%       3014.485       9967.004  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=100 wgs=1 ooq=0 event=1 flushCount=100)       7535.197       7819.824         16.77%       5059.452       9446.734  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=100 wgs=1 ooq=1 event=0 flushCount=100)       7039.028       6952.211         14.45%       5136.684       8881.963  [CPU]           [us]
+                                                                     FlushTime(api=ocl wgc=100 wgs=1 ooq=1 event=1 flushCount=100)       7216.177       7578.285         14.31%       4722.983       8111.247  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=100 wgs=32 ooq=0 event=0 flushCount=100)       6197.743       6821.106         28.59%       2489.136       7946.819  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=100 wgs=32 ooq=0 event=1 flushCount=100)       7544.027       7940.309         24.54%       4081.142      10775.221  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=100 wgs=32 ooq=1 event=0 flushCount=100)       5869.294       6089.886         14.53%       3700.069       6890.265  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=100 wgs=32 ooq=1 event=1 flushCount=100)       7781.897       6086.427         52.65%       3986.323      18937.509  [CPU]           [us]
+                                                                   FlushTime(api=ocl wgc=100 wgs=256 ooq=0 event=0 flushCount=100)       6714.448       6855.779         10.94%       4754.764       7439.942  [CPU]           [us]
+                                                                   FlushTime(api=ocl wgc=100 wgs=256 ooq=0 event=1 flushCount=100)       6089.805       6689.782         34.90%       2751.709       8291.018  [CPU]           [us]
+                                                                   FlushTime(api=ocl wgc=100 wgs=256 ooq=1 event=0 flushCount=100)       6852.502       6910.345         37.58%       3433.717      12847.451  [CPU]           [us]
+                                                                   FlushTime(api=ocl wgc=100 wgs=256 ooq=1 event=1 flushCount=100)       6727.824       5875.244         29.10%       5329.674      12046.059  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=1000 wgs=0 ooq=0 event=0 flushCount=100)       7881.386       8249.879         11.58%       5705.207       8658.000  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=1000 wgs=0 ooq=0 event=1 flushCount=100)       6913.798       7402.712         24.16%       4260.661       9654.379  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=1000 wgs=0 ooq=1 event=0 flushCount=100)       5671.506       5486.018         17.52%       4509.039       8017.128  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=1000 wgs=0 ooq=1 event=1 flushCount=100)       7654.001       8483.640         35.08%       2644.451      11980.180  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=1000 wgs=1 ooq=0 event=0 flushCount=100)       9396.615       5514.605        130.74%       3549.935      46128.330  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=1000 wgs=1 ooq=0 event=1 flushCount=100)       5887.028       5718.770         23.82%       3719.247       8735.305  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=1000 wgs=1 ooq=1 event=0 flushCount=100)       5519.438       4915.756         41.06%       3591.430      12029.862  [CPU]           [us]
+                                                                    FlushTime(api=ocl wgc=1000 wgs=1 ooq=1 event=1 flushCount=100)       6630.694       6558.959         22.59%       3647.670       9028.482  [CPU]           [us]
+                                                                   FlushTime(api=ocl wgc=1000 wgs=32 ooq=0 event=0 flushCount=100)       7409.835       6490.744         71.05%       2715.816      22509.724  [CPU]           [us]
+                                                                   FlushTime(api=ocl wgc=1000 wgs=32 ooq=0 event=1 flushCount=100)       5996.930       5099.283         54.84%       2573.895      13523.075  [CPU]           [us]
+                                                                   FlushTime(api=ocl wgc=1000 wgs=32 ooq=1 event=0 flushCount=100)       5815.346       5648.432         25.18%       3270.633       8783.202  [CPU]           [us]
+                                                                   FlushTime(api=ocl wgc=1000 wgs=32 ooq=1 event=1 flushCount=100)       5823.984       5878.724         23.53%       3526.485       8653.400  [CPU]           [us]
+                                                                  FlushTime(api=ocl wgc=1000 wgs=256 ooq=0 event=0 flushCount=100)       7847.644       7907.103         20.50%       4543.416      11152.426  [CPU]           [us]
+                                                                  FlushTime(api=ocl wgc=1000 wgs=256 ooq=0 event=1 flushCount=100)       9168.769       8271.972         52.55%       4871.911      23056.971  [CPU]           [us]
+                                                                  FlushTime(api=ocl wgc=1000 wgs=256 ooq=1 event=0 flushCount=100)       8832.344       5895.611         57.32%       5387.117      22098.346  [CPU]           [us]
+                                                                  FlushTime(api=ocl wgc=1000 wgs=256 ooq=1 event=1 flushCount=100)       8041.281       7829.756         18.08%       5920.605       9897.417  [CPU]           [us]
+                                             SetKernelArgSvmPointer(api=ocl allocationsCount=100 reallocate=0 allocationSize=1024)                                   NO_SUPPORT
+                                             SetKernelArgSvmPointer(api=ocl allocationsCount=100 reallocate=1 allocationSize=1024)                                   NO_SUPPORT
+                        SubmitKernel(api=ocl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=10 KernelExecTime=1 MeasureCompletion=0)                                        ERROR
+                        SubmitKernel(api=ocl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=10 KernelExecTime=1 MeasureCompletion=1)                                        ERROR
+                        SubmitKernel(api=ocl Profiling=0 Ioq=0 DiscardEvents=1 NumKernels=10 KernelExecTime=1 MeasureCompletion=0)                                        ERROR
+                        SubmitKernel(api=ocl Profiling=0 Ioq=0 DiscardEvents=1 NumKernels=10 KernelExecTime=1 MeasureCompletion=1)                                        ERROR
+                        SubmitKernel(api=ocl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=10 KernelExecTime=1 MeasureCompletion=0)                                        ERROR
+                        SubmitKernel(api=ocl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=10 KernelExecTime=1 MeasureCompletion=1)                                        ERROR
+                        SubmitKernel(api=ocl Profiling=0 Ioq=1 DiscardEvents=1 NumKernels=10 KernelExecTime=1 MeasureCompletion=0)                                        ERROR
+                        SubmitKernel(api=ocl Profiling=0 Ioq=1 DiscardEvents=1 NumKernels=10 KernelExecTime=1 MeasureCompletion=1)                                        ERROR
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/1
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/3
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/5
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/7
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/9
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/11
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/13
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/15
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/17
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/19
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/21
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/23
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/25
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/27
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/29
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] CreateBufferTest/CreateBufferTest.Test/31
+FAILED assertion ASSERT_CL_SUCCESS(retVal)
+	value: -30 (CL_INVALID_VALUE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/create_buffer_ocl.cpp:52
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/0
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/1
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/2
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/3
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/4
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/5
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/6
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/7
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/8
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/9
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/10
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] MultiArgumentKernelTest/MultiArgumentKernelTest.Test/11
+C++ exception with description "std::exception" thrown in the test body.
+
+[  FAILED  ] SubmitKernelTest/SubmitKernelTest.Test/0
+FAILED assertion ASSERT_CL_SUCCESS(clBuildProgram(program, 1, &opencl.device, nullptr, nullptr, nullptr))
+	value: -15 (CL_COMPILE_PROGRAM_FAILURE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/submit_kernel_ocl.cpp:41
+
+[  FAILED  ] SubmitKernelTest/SubmitKernelTest.Test/1
+FAILED assertion ASSERT_CL_SUCCESS(clBuildProgram(program, 1, &opencl.device, nullptr, nullptr, nullptr))
+	value: -15 (CL_COMPILE_PROGRAM_FAILURE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/submit_kernel_ocl.cpp:41
+
+[  FAILED  ] SubmitKernelTest/SubmitKernelTest.Test/2
+FAILED assertion ASSERT_CL_SUCCESS(clBuildProgram(program, 1, &opencl.device, nullptr, nullptr, nullptr))
+	value: -15 (CL_COMPILE_PROGRAM_FAILURE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/submit_kernel_ocl.cpp:41
+
+[  FAILED  ] SubmitKernelTest/SubmitKernelTest.Test/3
+FAILED assertion ASSERT_CL_SUCCESS(clBuildProgram(program, 1, &opencl.device, nullptr, nullptr, nullptr))
+	value: -15 (CL_COMPILE_PROGRAM_FAILURE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/submit_kernel_ocl.cpp:41
+
+[  FAILED  ] SubmitKernelTest/SubmitKernelTest.Test/4
+FAILED assertion ASSERT_CL_SUCCESS(clBuildProgram(program, 1, &opencl.device, nullptr, nullptr, nullptr))
+	value: -15 (CL_COMPILE_PROGRAM_FAILURE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/submit_kernel_ocl.cpp:41
+
+[  FAILED  ] SubmitKernelTest/SubmitKernelTest.Test/5
+FAILED assertion ASSERT_CL_SUCCESS(clBuildProgram(program, 1, &opencl.device, nullptr, nullptr, nullptr))
+	value: -15 (CL_COMPILE_PROGRAM_FAILURE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/submit_kernel_ocl.cpp:41
+
+[  FAILED  ] SubmitKernelTest/SubmitKernelTest.Test/6
+FAILED assertion ASSERT_CL_SUCCESS(clBuildProgram(program, 1, &opencl.device, nullptr, nullptr, nullptr))
+	value: -15 (CL_COMPILE_PROGRAM_FAILURE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/submit_kernel_ocl.cpp:41
+
+[  FAILED  ] SubmitKernelTest/SubmitKernelTest.Test/7
+FAILED assertion ASSERT_CL_SUCCESS(clBuildProgram(program, 1, &opencl.device, nullptr, nullptr, nullptr))
+	value: -15 (CL_COMPILE_PROGRAM_FAILURE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/api_overhead_benchmark/implementations/ocl/submit_kernel_ocl.cpp:41
+

@@ -20,7 +20,7 @@ message(STATUS "Build options:")
 
 # Selecting targets
 benchmark_option_group("Flags for selecting targets to be built")
-benchmark_option(BUILD_L0 ON)
+benchmark_option(BUILD_L0 OFF)
 benchmark_option(BUILD_OCL ON)
 benchmark_option(BUILD_UR OFF)
 benchmark_option(BUILD_SYCL OFF)

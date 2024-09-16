@@ -1,0 +1,29 @@
+OpenCL Platform: ARM Platform
+	Device: Mali-G710 r0p0
+		driverVersion: 3.0
+		computeUnits:  7
+		clockFreq:     5
+
+Running 10 iterations of each benchmark
+
+                                                                                                                               TestCase           Mean         Median         StdDev            Min            Max   Type   Label [unit]
+                                                                KernelAndCopy(api=ocl twoQueues=0 runKernel=1 runCopy=0 useCopyQueue=0)                                        ERROR
+                                                                KernelAndCopy(api=ocl twoQueues=0 runKernel=0 runCopy=1 useCopyQueue=0)      78323.543      73645.182         17.14%      72393.229     118395.182  [CPU]           [us]
+                                                                KernelAndCopy(api=ocl twoQueues=0 runKernel=1 runCopy=1 useCopyQueue=0)                                        ERROR
+                                                                KernelAndCopy(api=ocl twoQueues=1 runKernel=1 runCopy=1 useCopyQueue=0)                                        ERROR
+
+[  FAILED  ] KernelAndCopyTest/KernelAndCopyTest.Test/0
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 1, sizeof(bufferForKernelSize), &bufferForKernelSize))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/multiprocess_benchmark/implementations/ocl/kernel_and_copy_ocl.cpp:95
+
+[  FAILED  ] KernelAndCopyTest/KernelAndCopyTest.Test/2
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 1, sizeof(bufferForKernelSize), &bufferForKernelSize))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/multiprocess_benchmark/implementations/ocl/kernel_and_copy_ocl.cpp:95
+
+[  FAILED  ] KernelAndCopyTest/KernelAndCopyTest.Test/3
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 1, sizeof(bufferForKernelSize), &bufferForKernelSize))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/multiprocess_benchmark/implementations/ocl/kernel_and_copy_ocl.cpp:95
+

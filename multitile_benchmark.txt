@@ -1,0 +1,67 @@
+OpenCL Platform: ARM Platform
+	Device: Mali-G710 r0p0
+		driverVersion: 3.0
+		computeUnits:  7
+		clockFreq:     5
+
+Running 10 iterations of each benchmark
+
+                                                                                                                                TestCase           Mean         Median         StdDev            Min            Max   Type   Label [unit]
+                    CopyBuffer(api=ocl context=Root queue=Root src=Root dst=Root size=128MB srcCompressed=0 dstCompressed=0 useEvents=1)                                   NO_SUPPORT
+                    CopyBuffer(api=ocl context=Root queue=Root src=Root dst=Root size=128MB srcCompressed=0 dstCompressed=1 useEvents=1)                                   NO_SUPPORT
+                    CopyBuffer(api=ocl context=Root queue=Root src=Root dst=Root size=128MB srcCompressed=1 dstCompressed=0 useEvents=1)                                   NO_SUPPORT
+                    CopyBuffer(api=ocl context=Root queue=Root src=Root dst=Root size=128MB srcCompressed=1 dstCompressed=1 useEvents=1)                                   NO_SUPPORT
+                    CopyBuffer(api=ocl context=Root queue=Root src=Root dst=Root size=512MB srcCompressed=0 dstCompressed=0 useEvents=1)                                   NO_SUPPORT
+                    CopyBuffer(api=ocl context=Root queue=Root src=Root dst=Root size=512MB srcCompressed=0 dstCompressed=1 useEvents=1)                                   NO_SUPPORT
+                    CopyBuffer(api=ocl context=Root queue=Root src=Root dst=Root size=512MB srcCompressed=1 dstCompressed=0 useEvents=1)                                   NO_SUPPORT
+                    CopyBuffer(api=ocl context=Root queue=Root src=Root dst=Root size=512MB srcCompressed=1 dstCompressed=1 useEvents=1)                                   NO_SUPPORT
+                FillBuffer(api=ocl context=Root queue=Root memory=Root size=128MB patternSize=1 compressed=0 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+                FillBuffer(api=ocl context=Root queue=Root memory=Root size=128MB patternSize=1 compressed=1 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+               FillBuffer(api=ocl context=Root queue=Root memory=Root size=128MB patternSize=16 compressed=0 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+               FillBuffer(api=ocl context=Root queue=Root memory=Root size=128MB patternSize=16 compressed=1 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+              FillBuffer(api=ocl context=Root queue=Root memory=Root size=128MB patternSize=128 compressed=0 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+              FillBuffer(api=ocl context=Root queue=Root memory=Root size=128MB patternSize=128 compressed=1 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+                FillBuffer(api=ocl context=Root queue=Root memory=Root size=512MB patternSize=1 compressed=0 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+                FillBuffer(api=ocl context=Root queue=Root memory=Root size=512MB patternSize=1 compressed=1 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+               FillBuffer(api=ocl context=Root queue=Root memory=Root size=512MB patternSize=16 compressed=0 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+               FillBuffer(api=ocl context=Root queue=Root memory=Root size=512MB patternSize=16 compressed=1 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+              FillBuffer(api=ocl context=Root queue=Root memory=Root size=512MB patternSize=128 compressed=0 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+              FillBuffer(api=ocl context=Root queue=Root memory=Root size=512MB patternSize=128 compressed=1 forceBlitter=1 useEvents=1)                                   NO_SUPPORT
+                                             ReadBuffer(api=ocl context=Root queue=Root memory=Root size=128MB compressed=0 useEvents=1)                                   NO_SUPPORT
+                                             ReadBuffer(api=ocl context=Root queue=Root memory=Root size=128MB compressed=1 useEvents=1)                                   NO_SUPPORT
+                                             ReadBuffer(api=ocl context=Root queue=Root memory=Root size=512MB compressed=0 useEvents=1)                                   NO_SUPPORT
+                                             ReadBuffer(api=ocl context=Root queue=Root memory=Root size=512MB compressed=1 useEvents=1)                                   NO_SUPPORT
+                                        UsmCopy(api=ocl context=Root queue=Root src=Host dst=Host size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                        UsmCopy(api=ocl context=Root queue=Root src=Host dst=Root size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                   UsmCopy(api=ocl context=Root queue=Root src=Host dst=Host:Root size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                        UsmCopy(api=ocl context=Root queue=Root src=Root dst=Host size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                        UsmCopy(api=ocl context=Root queue=Root src=Root dst=Root size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                   UsmCopy(api=ocl context=Root queue=Root src=Root dst=Host:Root size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                   UsmCopy(api=ocl context=Root queue=Root src=Host:Root dst=Host size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                   UsmCopy(api=ocl context=Root queue=Root src=Host:Root dst=Root size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                              UsmCopy(api=ocl context=Root queue=Root src=Host:Root dst=Host:Root size=512MB forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                                 UsmCopyKernel(api=ocl context=Root queue=Root src=Host dst=Host size=512MB useEvents=1)                                   NO_SUPPORT
+                                                 UsmCopyKernel(api=ocl context=Root queue=Root src=Host dst=Root size=512MB useEvents=1)                                   NO_SUPPORT
+                                            UsmCopyKernel(api=ocl context=Root queue=Root src=Host dst=Host:Root size=512MB useEvents=1)                                   NO_SUPPORT
+                                                 UsmCopyKernel(api=ocl context=Root queue=Root src=Root dst=Host size=512MB useEvents=1)                                   NO_SUPPORT
+                                                 UsmCopyKernel(api=ocl context=Root queue=Root src=Root dst=Root size=512MB useEvents=1)                                   NO_SUPPORT
+                                            UsmCopyKernel(api=ocl context=Root queue=Root src=Root dst=Host:Root size=512MB useEvents=1)                                   NO_SUPPORT
+                                            UsmCopyKernel(api=ocl context=Root queue=Root src=Host:Root dst=Host size=512MB useEvents=1)                                   NO_SUPPORT
+                                            UsmCopyKernel(api=ocl context=Root queue=Root src=Host:Root dst=Root size=512MB useEvents=1)                                   NO_SUPPORT
+                                       UsmCopyKernel(api=ocl context=Root queue=Root src=Host:Root dst=Host:Root size=512MB useEvents=1)                                   NO_SUPPORT
+                                UsmFill(api=ocl context=Root queue=Root memory=Host size=512MB patternSize=1 forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                              UsmFill(api=ocl context=Root queue=Root memory=Host size=512MB patternSize=128 forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                UsmFill(api=ocl context=Root queue=Root memory=Root size=512MB patternSize=1 forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                              UsmFill(api=ocl context=Root queue=Root memory=Root size=512MB patternSize=128 forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                           UsmFill(api=ocl context=Root queue=Root memory=Host:Root size=512MB patternSize=1 forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                         UsmFill(api=ocl context=Root queue=Root memory=Host:Root size=512MB patternSize=128 forceBlitter=0 useEvents=1)                                   NO_SUPPORT
+                                                  UsmSharedMigrateCpu(api=ocl context=Root memory=Host:Root size=128MB accessAllBytes=0)                                   NO_SUPPORT
+                                                  UsmSharedMigrateCpu(api=ocl context=Root memory=Host:Root size=128MB accessAllBytes=1)                                   NO_SUPPORT
+                                                  UsmSharedMigrateCpu(api=ocl context=Root memory=Host:Root size=512MB accessAllBytes=0)                                   NO_SUPPORT
+                                                  UsmSharedMigrateCpu(api=ocl context=Root memory=Host:Root size=512MB accessAllBytes=1)                                   NO_SUPPORT
+                                                                   UsmSharedMigrateGpu(api=ocl context=Root memory=Host:Root size=128MB)                                   NO_SUPPORT
+                                                                   UsmSharedMigrateGpu(api=ocl context=Root memory=Host:Root size=512MB)                                   NO_SUPPORT
+                                            WriteBuffer(api=ocl context=Root queue=Root memory=Root size=128MB compressed=0 useEvents=1)                                   NO_SUPPORT
+                                            WriteBuffer(api=ocl context=Root queue=Root memory=Root size=128MB compressed=1 useEvents=1)                                   NO_SUPPORT
+                                            WriteBuffer(api=ocl context=Root queue=Root memory=Root size=512MB compressed=0 useEvents=1)                                   NO_SUPPORT
+                                            WriteBuffer(api=ocl context=Root queue=Root memory=Root size=512MB compressed=1 useEvents=1)                                   NO_SUPPORT

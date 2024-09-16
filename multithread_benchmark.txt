@@ -1,0 +1,14 @@
+OpenCL Platform: ARM Platform
+	Device: Mali-G710 r0p0
+		driverVersion: 3.0
+		computeUnits:  7
+		clockFreq:     5
+
+Running 10 iterations of each benchmark
+
+                                                                                                                               TestCase           Mean         Median         StdDev            Min            Max   Type   Label [unit]
+                                                                                                     SvmCopy(api=ocl numberOfThreads=1)                                   NO_SUPPORT
+                                                                                                     SvmCopy(api=ocl numberOfThreads=2)                                   NO_SUPPORT
+                                                                                                     SvmCopy(api=ocl numberOfThreads=4)                                   NO_SUPPORT
+                                                                                                     SvmCopy(api=ocl numberOfThreads=8)                                   NO_SUPPORT
+                                                                                                    SvmCopy(api=ocl numberOfThreads=16)                                   NO_SUPPORT

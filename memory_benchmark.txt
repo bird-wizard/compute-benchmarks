@@ -1,0 +1,125 @@
+OpenCL Platform: ARM Platform
+	Device: Mali-G710 r0p0
+		driverVersion: 3.0
+		computeUnits:  7
+		clockFreq:     5
+
+Running 10 iterations of each benchmark
+
+                                                                                                                      TestCase           Mean         Median         StdDev            Min            Max   Type   Label [unit]
+                              CopyBuffer(api=ocl size=1 contents=Zeros compressedSource=0 compressedDestination=0 useEvents=1)                                        ERROR
+                              CopyBuffer(api=ocl size=1 contents=Zeros compressedSource=0 compressedDestination=1 useEvents=1)                                        ERROR
+                              CopyBuffer(api=ocl size=1 contents=Zeros compressedSource=1 compressedDestination=0 useEvents=1)                                        ERROR
+                              CopyBuffer(api=ocl size=1 contents=Zeros compressedSource=1 compressedDestination=1 useEvents=1)                                        ERROR
+                          CopyBuffer(api=ocl size=128MB contents=Zeros compressedSource=0 compressedDestination=0 useEvents=1)                                        ERROR
+                          CopyBuffer(api=ocl size=128MB contents=Zeros compressedSource=0 compressedDestination=1 useEvents=1)                                        ERROR
+                          CopyBuffer(api=ocl size=128MB contents=Zeros compressedSource=1 compressedDestination=0 useEvents=1)                                        ERROR
+                          CopyBuffer(api=ocl size=128MB contents=Zeros compressedSource=1 compressedDestination=1 useEvents=1)                                        ERROR
+                          CopyBuffer(api=ocl size=512MB contents=Zeros compressedSource=0 compressedDestination=0 useEvents=1)                                        ERROR
+                          CopyBuffer(api=ocl size=512MB contents=Zeros compressedSource=0 compressedDestination=1 useEvents=1)                                        ERROR
+                          CopyBuffer(api=ocl size=512MB contents=Zeros compressedSource=1 compressedDestination=0 useEvents=1)                                        ERROR
+                          CopyBuffer(api=ocl size=512MB contents=Zeros compressedSource=1 compressedDestination=1 useEvents=1)                                        ERROR
+        CopyBufferRect(api=ocl size=16KB srcCompressed=0 dstCompressed=0 origin=0:0:0 region=128:128:1 rPitch=128 sPitch=16KB)                                        ERROR
+       CopyBufferRect(api=ocl size=2MB srcCompressed=0 dstCompressed=0 origin=0:0:0 region=128:128:128 rPitch=128 sPitch=16KB)                                        ERROR
+  CopyBufferRect(api=ocl size=128MB srcCompressed=0 dstCompressed=0 origin=0:0:0 region=128:1024:1024 rPitch=128 sPitch=128KB)                                        ERROR
+     CopyBufferRect(api=ocl size=16MB srcCompressed=0 dstCompressed=0 origin=0:0:0 region=1024:16:1024 rPitch=1KB sPitch=16KB)                                        ERROR
+      CopyBufferRect(api=ocl size=16MB srcCompressed=0 dstCompressed=0 origin=0:0:0 region=1024:1024:16 rPitch=1KB sPitch=1MB)                                        ERROR
+        CopyBufferRect(api=ocl size=16KB srcCompressed=0 dstCompressed=1 origin=0:0:0 region=128:128:1 rPitch=128 sPitch=16KB)                                        ERROR
+       CopyBufferRect(api=ocl size=2MB srcCompressed=0 dstCompressed=1 origin=0:0:0 region=128:128:128 rPitch=128 sPitch=16KB)                                        ERROR
+  CopyBufferRect(api=ocl size=128MB srcCompressed=0 dstCompressed=1 origin=0:0:0 region=128:1024:1024 rPitch=128 sPitch=128KB)                                        ERROR
+     CopyBufferRect(api=ocl size=16MB srcCompressed=0 dstCompressed=1 origin=0:0:0 region=1024:16:1024 rPitch=1KB sPitch=16KB)                                        ERROR
+      CopyBufferRect(api=ocl size=16MB srcCompressed=0 dstCompressed=1 origin=0:0:0 region=1024:1024:16 rPitch=1KB sPitch=1MB)                                        ERROR
+        CopyBufferRect(api=ocl size=16KB srcCompressed=1 dstCompressed=0 origin=0:0:0 region=128:128:1 rPitch=128 sPitch=16KB)                                        ERROR
+       CopyBufferRect(api=ocl size=2MB srcCompressed=1 dstCompressed=0 origin=0:0:0 region=128:128:128 rPitch=128 sPitch=16KB)                                        ERROR
+  CopyBufferRect(api=ocl size=128MB srcCompressed=1 dstCompressed=0 origin=0:0:0 region=128:1024:1024 rPitch=128 sPitch=128KB)                                        ERROR
+     CopyBufferRect(api=ocl size=16MB srcCompressed=1 dstCompressed=0 origin=0:0:0 region=1024:16:1024 rPitch=1KB sPitch=16KB)                                        ERROR
+      CopyBufferRect(api=ocl size=16MB srcCompressed=1 dstCompressed=0 origin=0:0:0 region=1024:1024:16 rPitch=1KB sPitch=1MB)                                        ERROR
+        CopyBufferRect(api=ocl size=16KB srcCompressed=1 dstCompressed=1 origin=0:0:0 region=128:128:1 rPitch=128 sPitch=16KB)                                        ERROR
+       CopyBufferRect(api=ocl size=2MB srcCompressed=1 dstCompressed=1 origin=0:0:0 region=128:128:128 rPitch=128 sPitch=16KB)                                        ERROR
+  CopyBufferRect(api=ocl size=128MB srcCompressed=1 dstCompressed=1 origin=0:0:0 region=128:1024:1024 rPitch=128 sPitch=128KB)                                        ERROR
+     CopyBufferRect(api=ocl size=16MB srcCompressed=1 dstCompressed=1 origin=0:0:0 region=1024:16:1024 rPitch=1KB sPitch=16KB)                                        ERROR
+      CopyBufferRect(api=ocl size=16MB srcCompressed=1 dstCompressed=1 origin=0:0:0 region=1024:1024:16 rPitch=1KB sPitch=1MB)                                        ERROR
+                                   CopyBufferToImage(api=ocl region=8192:1:1 src=Device size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                     CopyBufferToImage(api=ocl region=8192:1:1 src=Host size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                  CopyBufferToImage(api=ocl region=16384:1:1 src=Device size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                    CopyBufferToImage(api=ocl region=16384:1:1 src=Host size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                  CopyBufferToImage(api=ocl region=256:512:1 src=Device size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                    CopyBufferToImage(api=ocl region=256:512:1 src=Host size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                  CopyBufferToImage(api=ocl region=512:512:1 src=Device size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                    CopyBufferToImage(api=ocl region=512:512:1 src=Host size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                  CopyBufferToImage(api=ocl region=512:512:2 src=Device size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                    CopyBufferToImage(api=ocl region=512:512:2 src=Host size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                 CopyBufferToImage(api=ocl region=512:512:64 src=Device size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                   CopyBufferToImage(api=ocl region=512:512:64 src=Host size=512MB forceBlitter=0 useEvents=1)                                        ERROR
+                                                             CopyEntireImage(api=ocl size=8192:1:1 forceBlitter=0 useEvents=1)          6.590          6.753          7.51%          5.298          7.049  [GPU]         [GB/s]
+                                                            CopyEntireImage(api=ocl size=16384:1:1 forceBlitter=0 useEvents=1)          7.013          7.018          0.99%          6.905          7.174  [GPU]         [GB/s]
+                                                            CopyEntireImage(api=ocl size=256:512:1 forceBlitter=0 useEvents=1)          8.518          8.546          2.58%          7.972          8.888  [GPU]         [GB/s]
+                                                            CopyEntireImage(api=ocl size=512:512:1 forceBlitter=0 useEvents=1)          7.973          8.062          6.69%          7.192          8.733  [GPU]         [GB/s]
+                                                            CopyEntireImage(api=ocl size=512:512:2 forceBlitter=0 useEvents=1)          8.173          8.242          2.70%          7.790          8.457  [GPU]         [GB/s]
+                                                           CopyEntireImage(api=ocl size=512:512:64 forceBlitter=0 useEvents=1)          8.400          8.799          9.45%          6.623          9.030  [GPU]         [GB/s]
+                                                            CopyImageRegion(api=ocl size=128:128:1 forceBlitter=0 useEvents=1)          6.676          6.618          2.62%          6.455          6.972  [GPU]         [GB/s]
+                                                          CopyImageRegion(api=ocl size=128:128:128 forceBlitter=0 useEvents=1)          8.532          8.575          2.72%          7.921          8.862  [GPU]         [GB/s]
+                                                        CopyImageRegion(api=ocl size=128:1024:1024 forceBlitter=0 useEvents=1)          8.676          8.740          2.04%          8.156          8.769  [GPU]         [GB/s]
+                                                         CopyImageRegion(api=ocl size=1024:16:1024 forceBlitter=0 useEvents=1)          8.693          8.740          2.02%          8.284          8.861  [GPU]         [GB/s]
+                                                         CopyImageRegion(api=ocl size=1024:1024:16 forceBlitter=0 useEvents=1)          7.983          8.754         29.23%          0.985          8.874  [GPU]         [GB/s]
+                                   CopyImageToBuffer(api=ocl dst=Device size=512MB region=8192:1:1 forceBlitter=0 useEvents=1)         10.425         10.226          9.67%          8.135         11.546  [GPU]         [GB/s]
+                                  CopyImageToBuffer(api=ocl dst=Device size=512MB region=16384:1:1 forceBlitter=0 useEvents=1)         10.068         10.263          8.23%          8.477         11.303  [GPU]         [GB/s]
+                                  CopyImageToBuffer(api=ocl dst=Device size=512MB region=256:512:1 forceBlitter=0 useEvents=1)         12.236         12.290          4.17%         11.317         12.937  [GPU]         [GB/s]
+                                  CopyImageToBuffer(api=ocl dst=Device size=512MB region=512:512:1 forceBlitter=0 useEvents=1)         11.180         11.502         11.82%          8.422         13.114  [GPU]         [GB/s]
+                                  CopyImageToBuffer(api=ocl dst=Device size=512MB region=512:512:2 forceBlitter=0 useEvents=1)         10.115         10.098          1.78%          9.822         10.415  [GPU]         [GB/s]
+                                 CopyImageToBuffer(api=ocl dst=Device size=512MB region=512:512:64 forceBlitter=0 useEvents=1)         10.764         10.772          0.67%         10.634         10.866  [GPU]         [GB/s]
+                                     CopyImageToBuffer(api=ocl dst=Host size=512MB region=8192:1:1 forceBlitter=0 useEvents=1)          9.820         10.043          9.83%          7.819         10.919  [GPU]         [GB/s]
+                                    CopyImageToBuffer(api=ocl dst=Host size=512MB region=16384:1:1 forceBlitter=0 useEvents=1)          9.554         10.545         30.09%          1.159         11.403  [GPU]         [GB/s]
+                                    CopyImageToBuffer(api=ocl dst=Host size=512MB region=256:512:1 forceBlitter=0 useEvents=1)         12.335         12.603          5.90%         10.499         12.972  [GPU]         [GB/s]
+                                    CopyImageToBuffer(api=ocl dst=Host size=512MB region=512:512:1 forceBlitter=0 useEvents=1)         11.162         11.170          1.44%         10.907         11.420  [GPU]         [GB/s]
+                                    CopyImageToBuffer(api=ocl dst=Host size=512MB region=512:512:2 forceBlitter=0 useEvents=1)         10.141         10.231          4.89%          8.987         10.849  [GPU]         [GB/s]
+                                   CopyImageToBuffer(api=ocl dst=Host size=512MB region=512:512:64 forceBlitter=0 useEvents=1)         10.659         10.804          3.04%          9.987         10.894  [GPU]         [GB/s]
+                           FillBuffer(api=ocl size=128MB contents=Zeros patternSize=1 compressed=0 forceBlitter=0 useEvents=1)                                        ERROR
+                           FillBuffer(api=ocl size=128MB contents=Zeros patternSize=1 compressed=1 forceBlitter=0 useEvents=1)                                        ERROR
+                          FillBuffer(api=ocl size=128MB contents=Zeros patternSize=16 compressed=0 forceBlitter=0 useEvents=1)                                        ERROR
+                          FillBuffer(api=ocl size=128MB contents=Zeros patternSize=16 compressed=1 forceBlitter=0 useEvents=1)                                        ERROR
+                         FillBuffer(api=ocl size=128MB contents=Zeros patternSize=128 compressed=0 forceBlitter=0 useEvents=1)                                        ERROR
+                         FillBuffer(api=ocl size=128MB contents=Zeros patternSize=128 compressed=1 forceBlitter=0 useEvents=1)                                        ERROR
+                           FillBuffer(api=ocl size=512MB contents=Zeros patternSize=1 compressed=0 forceBlitter=0 useEvents=1)                                        ERROR
+                           FillBuffer(api=ocl size=512MB contents=Zeros patternSize=1 compressed=1 forceBlitter=0 useEvents=1)                                        ERROR
+                          FillBuffer(api=ocl size=512MB contents=Zeros patternSize=16 compressed=0 forceBlitter=0 useEvents=1)                                        ERROR
+                          FillBuffer(api=ocl size=512MB contents=Zeros patternSize=16 compressed=1 forceBlitter=0 useEvents=1)                                        ERROR
+                         FillBuffer(api=ocl size=512MB contents=Zeros patternSize=128 compressed=0 forceBlitter=0 useEvents=1)                                        ERROR
+                         FillBuffer(api=ocl size=512MB contents=Zeros patternSize=128 compressed=1 forceBlitter=0 useEvents=1)                                        ERROR
+                                           MapBuffer(api=ocl size=128MB contents=Zeros compressed=0 mapFlags=Read useEvents=1)                                        ERROR
+                                          MapBuffer(api=ocl size=128MB contents=Zeros compressed=0 mapFlags=Write useEvents=1)                                        ERROR
+                                MapBuffer(api=ocl size=128MB contents=Zeros compressed=0 mapFlags=WriteInvalidate useEvents=1)                                        ERROR
+                                           MapBuffer(api=ocl size=128MB contents=Zeros compressed=1 mapFlags=Read useEvents=1)                                        ERROR
+                                          MapBuffer(api=ocl size=128MB contents=Zeros compressed=1 mapFlags=Write useEvents=1)                                        ERROR
+                                MapBuffer(api=ocl size=128MB contents=Zeros compressed=1 mapFlags=WriteInvalidate useEvents=1)                                        ERROR
+                                           MapBuffer(api=ocl size=512MB contents=Zeros compressed=0 mapFlags=Read useEvents=1)                                        ERROR
+                                          MapBuffer(api=ocl size=512MB contents=Zeros compressed=0 mapFlags=Write useEvents=1)                                        ERROR
+                                MapBuffer(api=ocl size=512MB contents=Zeros compressed=0 mapFlags=WriteInvalidate useEvents=1)                                        ERROR
+                                           MapBuffer(api=ocl size=512MB contents=Zeros compressed=1 mapFlags=Read useEvents=1)                                        ERROR
+                                          MapBuffer(api=ocl size=512MB contents=Zeros compressed=1 mapFlags=Write useEvents=1)                                        ERROR
+                                MapBuffer(api=ocl size=512MB contents=Zeros compressed=1 mapFlags=WriteInvalidate useEvents=1)                                        ERROR
+                                             ReadBuffer(api=ocl size=128MB contents=Zeros compressed=0 useEvents=0 reuse=None)                                        ERROR
+                                              ReadBuffer(api=ocl size=128MB contents=Zeros compressed=0 useEvents=0 reuse=Usm)                                        ERROR
+                                              ReadBuffer(api=ocl size=128MB contents=Zeros compressed=0 useEvents=0 reuse=Map)                                        ERROR
+                                             ReadBuffer(api=ocl size=128MB contents=Zeros compressed=0 useEvents=1 reuse=None)                                        ERROR
+                                              ReadBuffer(api=ocl size=128MB contents=Zeros compressed=0 useEvents=1 reuse=Usm)                                        ERROR
+                                              ReadBuffer(api=ocl size=128MB contents=Zeros compressed=0 useEvents=1 reuse=Map)                                        ERROR
+                                             ReadBuffer(api=ocl size=128MB contents=Zeros compressed=1 useEvents=0 reuse=None)                                        ERROR
+                                              ReadBuffer(api=ocl size=128MB contents=Zeros compressed=1 useEvents=0 reuse=Usm)                                        ERROR
+                                              ReadBuffer(api=ocl size=128MB contents=Zeros compressed=1 useEvents=0 reuse=Map)                                        ERROR
+                                             ReadBuffer(api=ocl size=128MB contents=Zeros compressed=1 useEvents=1 reuse=None)                                        ERROR
+                                              ReadBuffer(api=ocl size=128MB contents=Zeros compressed=1 useEvents=1 reuse=Usm)                                        ERROR
+                                              ReadBuffer(api=ocl size=128MB contents=Zeros compressed=1 useEvents=1 reuse=Map)                                        ERROR
+                                             ReadBuffer(api=ocl size=512MB contents=Zeros compressed=0 useEvents=0 reuse=None)                                        ERROR
+                                              ReadBuffer(api=ocl size=512MB contents=Zeros compressed=0 useEvents=0 reuse=Usm)                                        ERROR
+                                              ReadBuffer(api=ocl size=512MB contents=Zeros compressed=0 useEvents=0 reuse=Map)                                        ERROR
+                                             ReadBuffer(api=ocl size=512MB contents=Zeros compressed=0 useEvents=1 reuse=None)                                        ERROR
+                                              ReadBuffer(api=ocl size=512MB contents=Zeros compressed=0 useEvents=1 reuse=Usm)                                        ERROR
+                                              ReadBuffer(api=ocl size=512MB contents=Zeros compressed=0 useEvents=1 reuse=Map)                                        ERROR
+                                             ReadBuffer(api=ocl size=512MB contents=Zeros compressed=1 useEvents=0 reuse=None)                                        ERROR
+                                              ReadBuffer(api=ocl size=512MB contents=Zeros compressed=1 useEvents=0 reuse=Usm)                                        ERROR
+                                              ReadBuffer(api=ocl size=512MB contents=Zeros compressed=1 useEvents=0 reuse=Map)                                        ERROR
+                                             ReadBuffer(api=ocl size=512MB contents=Zeros compressed=1 useEvents=1 reuse=None)                                        ERROR
+                                              ReadBuffer(api=ocl size=512MB contents=Zeros compressed=1 useEvents=1 reuse=Usm)                                        ERROR
+                                              ReadBuffer(api=ocl size=512MB contents=Zeros compressed=1 useEvents=1 reuse=Map)                                        ERROR
+                                                            ReadBufferMisaligned(api=ocl size=16MB misalignment=0 useEvents=1)          7.462          8.872         36.33%          3.374         10.070  [GPU]         [GB/s]

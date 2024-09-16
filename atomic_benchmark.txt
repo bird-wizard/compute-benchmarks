@@ -1,0 +1,1600 @@
+OpenCL Platform: ARM Platform
+	Device: Mali-G710 r0p0
+		driverVersion: 3.0
+		computeUnits:  7
+		clockFreq:     5
+
+Running 10 iterations of each benchmark
+
+                                                                                                                TestCase           Mean         Median         StdDev            Min            Max   Type   Label [unit]
+                                                         OneAtomic(api=ocl type=Float op=Xchg wgc=32 wgs=64 useEvents=1)       5328.300       5306.500          2.04%       5220.000       5616.000  [GPU]           [ns]
+                                                          OneAtomic(api=ocl type=Int32 op=Add wgc=32 wgs=64 useEvents=1)       5289.100       5287.500          0.88%       5221.000       5364.000  [GPU]           [ns]
+                                                         OneAtomic(api=ocl type=Int32 op=Xchg wgc=32 wgs=64 useEvents=1)       5323.800       5305.000          1.67%       5221.000       5542.000  [GPU]           [ns]
+                                                          OneAtomic(api=ocl type=Int32 op=Inc wgc=32 wgs=64 useEvents=1)       5330.100       5315.500          1.88%       5221.000       5588.000  [GPU]           [ns]
+                                                          OneAtomic(api=ocl type=Int32 op=Min wgc=32 wgs=64 useEvents=1)       5342.300       5303.000          2.42%       5219.000       5681.000  [GPU]           [ns]
+                                                          OneAtomic(api=ocl type=Int32 op=And wgc=32 wgs=64 useEvents=1)       5309.900       5290.500          1.63%       5220.000       5526.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)       5278.000       5270.500          0.83%       5221.000       5364.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)       5292.600       5299.000          1.05%       5221.000       5365.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)       5281.400       5294.500          0.88%       5220.000       5364.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)       5296.800       5299.000          0.94%       5219.000       5363.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)       5292.400       5297.500          1.06%       5220.000       5367.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)       5301.800       5306.500          0.97%       5220.000       5364.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=acquire wgc=32 wgs=64 useEvents=1)       5283.100       5297.500          0.83%       5220.000       5364.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=release wgc=32 wgs=64 useEvents=1)       5284.800       5292.000          0.94%       5220.000       5363.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)       5301.100       5306.000          0.98%       5220.000       5367.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)       5290.700       5295.500          0.91%       5221.000       5363.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)       5275.200       5274.000          0.82%       5221.000       5363.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)       5291.800       5296.000          0.91%       5219.000       5366.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)       5301.600       5307.000          0.96%       5222.000       5365.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)       5280.600       5270.500          0.97%       5221.000       5363.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)       5325.900       5298.000          2.58%       5221.000       5711.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)       5292.900       5292.500          0.88%       5220.000       5363.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=acquire wgc=32 wgs=64 useEvents=1)       5301.800       5308.000          0.97%       5220.000       5365.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=release wgc=32 wgs=64 useEvents=1)       5300.900       5306.000          0.98%       5219.000       5366.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)       5300.700       5306.000          0.99%       5218.000       5365.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)       5293.200       5294.500          0.87%       5220.000       5361.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)       5286.200       5296.000          0.96%       5220.000       5362.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)       5285.900       5292.500          0.95%       5218.000       5361.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)       5301.200       5307.000          0.98%       5220.000       5366.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)       5291.600       5295.500          1.05%       5219.000       5363.000  [GPU]           [ns]
+                   OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)       5288.300       5295.000          0.93%       5220.000       5362.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)       5292.300       5293.500          1.05%       5220.000       5365.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=acquire wgc=32 wgs=64 useEvents=1)       5323.400       5304.000          1.92%       5221.000       5595.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=release wgc=32 wgs=64 useEvents=1)       5294.300       5296.500          0.89%       5220.000       5364.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)       5293.300       5292.000          0.88%       5220.000       5366.000  [GPU]           [ns]
+                      OneAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)       5287.000       5273.000          1.22%       5220.000       5427.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)       5291.900       5295.500          0.93%       5220.000       5366.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)       5294.700       5295.500          1.01%       5218.000       5365.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)       5281.100       5273.000          0.97%       5221.000       5364.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)       5284.500       5292.000          0.95%       5220.000       5364.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)       5283.900       5292.000          0.95%       5220.000       5361.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)       5300.900       5305.500          0.99%       5220.000       5366.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=acquire wgc=32 wgs=64 useEvents=1)       5278.400       5272.000          0.81%       5221.000       5362.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=release wgc=32 wgs=64 useEvents=1)       5284.700       5294.500          0.97%       5219.000       5364.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)       5292.300       5298.500          1.07%       5219.000       5366.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)       5282.800       5291.500          0.80%       5221.000       5364.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)       5286.300       5286.000          0.90%       5220.000       5364.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)       5281.300       5292.000          0.89%       5220.000       5361.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)       5290.700       5299.000          0.93%       5220.000       5364.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)       5300.800       5304.500          0.98%       5220.000       5366.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)       5288.800       5294.500          0.94%       5218.000       5366.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)       5288.400       5294.000          0.91%       5221.000       5362.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=acquire wgc=32 wgs=64 useEvents=1)       5279.000       5276.500          0.87%       5221.000       5361.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=release wgc=32 wgs=64 useEvents=1)       5280.800       5272.500          0.97%       5220.000       5366.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)       5289.200       5295.500          0.93%       5220.000       5364.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)       5291.300       5292.000          1.06%       5219.000       5366.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)       5283.900       5292.000          0.96%       5221.000       5364.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)       5284.300       5292.500          0.95%       5219.000       5362.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)       5312.300       5295.000          1.87%       5219.000       5583.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)       5277.200       5292.000          0.81%       5219.000       5362.000  [GPU]           [ns]
+                    OneAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)       5293.200       5293.500          0.88%       5221.000       5363.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)       5292.000       5296.500          1.06%       5220.000       5366.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=acquire wgc=32 wgs=64 useEvents=1)       5284.600       5292.000          0.95%       5219.000       5366.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=release wgc=32 wgs=64 useEvents=1)       5300.300       5306.000          0.95%       5221.000       5364.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)       5300.800       5306.000          0.97%       5220.000       5366.000  [GPU]           [ns]
+                       OneAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)       5290.500       5292.500          1.06%       5218.000       5366.000  [GPU]           [ns]
+                                                            OneLocalAtomic(api=ocl type=Float op=Xchg wgs=1 useEvents=1)                                        ERROR
+                                                          OneLocalAtomic(api=ocl type=Float op=Xchg wgs=256 useEvents=1)                                        ERROR
+                                                             OneLocalAtomic(api=ocl type=Int32 op=Add wgs=1 useEvents=1)                                        ERROR
+                                                           OneLocalAtomic(api=ocl type=Int32 op=Add wgs=256 useEvents=1)                                        ERROR
+                                                            OneLocalAtomic(api=ocl type=Int32 op=Xchg wgs=1 useEvents=1)                                        ERROR
+                                                          OneLocalAtomic(api=ocl type=Int32 op=Xchg wgs=256 useEvents=1)                                        ERROR
+                                                             OneLocalAtomic(api=ocl type=Int32 op=Inc wgs=1 useEvents=1)                                        ERROR
+                                                           OneLocalAtomic(api=ocl type=Int32 op=Inc wgs=256 useEvents=1)                                        ERROR
+                                                             OneLocalAtomic(api=ocl type=Int32 op=Min wgs=1 useEvents=1)                                        ERROR
+                                                           OneLocalAtomic(api=ocl type=Int32 op=Min wgs=256 useEvents=1)                                        ERROR
+                                                             OneLocalAtomic(api=ocl type=Int32 op=And wgs=1 useEvents=1)                                        ERROR
+                                                           OneLocalAtomic(api=ocl type=Int32 op=And wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=relaxed wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=relaxed wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=acquire wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=acquire wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=release wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=release wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Workgroup order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=relaxed wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=relaxed wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=acquire wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=acquire wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=release wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=release wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Float op=Xchg scope=Device order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=relaxed wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=relaxed wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=acquire wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=acquire wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=release wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=release wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Workgroup order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=relaxed wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=relaxed wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=acquire wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=acquire wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=release wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=release wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Add scope=Device order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=relaxed wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=relaxed wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=acquire wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=acquire wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=release wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=release wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                      OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                    OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Workgroup order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=relaxed wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=relaxed wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=acquire wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=acquire wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=release wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=release wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                         OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Xchg scope=Device order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=relaxed wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=relaxed wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=acquire wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=acquire wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=release wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=release wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Workgroup order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=relaxed wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=relaxed wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=acquire wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=acquire wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=release wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=release wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Inc scope=Device order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=relaxed wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=relaxed wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=acquire wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=acquire wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=release wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=release wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Workgroup order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=relaxed wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=relaxed wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=acquire wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=acquire wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=release wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=release wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=Min scope=Device order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=relaxed wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=relaxed wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=acquire wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=acquire wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=release wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=release wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                       OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                     OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Workgroup order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=relaxed wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=relaxed wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=acquire wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=acquire wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=release wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=release wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=acq_rel wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=acq_rel wgs=256 useEvents=1)                                        ERROR
+                          OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=seq_cst wgs=1 useEvents=1)                                        ERROR
+                        OneLocalAtomicExplicit(api=ocl type=Int32 op=And scope=Device order=seq_cst wgs=256 useEvents=1)                                        ERROR
+                             SeparateAtomics(api=ocl type=Float op=Xchg atomicsPerCacheline=1 wgc=32 wgs=64 useEvents=1)       1639.300       1414.000         30.83%       1208.000       2791.000  [GPU]           [ns]
+                             SeparateAtomics(api=ocl type=Float op=Xchg atomicsPerCacheline=4 wgc=32 wgs=64 useEvents=1)       1004.500       1004.000          0.07%       1004.000       1006.000  [GPU]           [ns]
+                              SeparateAtomics(api=ocl type=Int32 op=Add atomicsPerCacheline=1 wgc=32 wgs=64 useEvents=1)       1534.600       1395.000         31.11%       1208.000       2888.000  [GPU]           [ns]
+                              SeparateAtomics(api=ocl type=Int32 op=Add atomicsPerCacheline=4 wgc=32 wgs=64 useEvents=1)       1032.200       1005.000          3.71%       1004.000       1090.000  [GPU]           [ns]
+                             SeparateAtomics(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 wgc=32 wgs=64 useEvents=1)       1469.900       1237.000         22.94%       1208.000       2009.000  [GPU]           [ns]
+                             SeparateAtomics(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 wgc=32 wgs=64 useEvents=1)       1004.500       1004.500          0.05%       1004.000       1005.000  [GPU]           [ns]
+                              SeparateAtomics(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 wgc=32 wgs=64 useEvents=1)       1480.700       1345.000         15.69%       1345.000       2009.000  [GPU]           [ns]
+                              SeparateAtomics(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 wgc=32 wgs=64 useEvents=1)       1023.900       1005.000          3.28%       1004.000       1090.000  [GPU]           [ns]
+                              SeparateAtomics(api=ocl type=Int32 op=Min atomicsPerCacheline=1 wgc=32 wgs=64 useEvents=1)       1483.200       1368.000         16.68%       1345.000       2179.000  [GPU]           [ns]
+                              SeparateAtomics(api=ocl type=Int32 op=Min atomicsPerCacheline=4 wgc=32 wgs=64 useEvents=1)       1043.900       1031.500          3.88%       1004.000       1090.000  [GPU]           [ns]
+                              SeparateAtomics(api=ocl type=Int32 op=And atomicsPerCacheline=1 wgc=32 wgs=64 useEvents=1)       1420.600       1344.500         11.81%       1344.000       1882.000  [GPU]           [ns]
+                              SeparateAtomics(api=ocl type=Int32 op=And atomicsPerCacheline=4 wgc=32 wgs=64 useEvents=1)        777.800        704.000         18.80%        672.000       1090.000  [GPU]           [ns]
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=1 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Float op=Xchg atomicsPerCacheline=4 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=1 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Add atomicsPerCacheline=4 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=1 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Xchg atomicsPerCacheline=4 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=1 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Inc atomicsPerCacheline=4 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=1 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=Min atomicsPerCacheline=4 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=1 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Workgroup order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Workgroup order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Workgroup order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Workgroup order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Workgroup order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Device order=relaxed wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Device order=acquire wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Device order=release wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Device order=acq_rel wgc=32 wgs=64 useEvents=1)                                        ERROR
+SeparateAtomicsExplicit(api=ocl type=Int32 op=And atomicsPerCacheline=4 scope=Device order=seq_cst wgc=32 wgs=64 useEvents=1)                                        ERROR
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/2
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/3
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/10
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/11
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/12
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/13
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/14
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/15
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/16
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/17
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/18
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicTest/OneLocalAtomicTest.Test/19
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/20
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/21
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/22
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/23
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/24
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/25
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/26
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/27
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/28
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/29
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/30
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/31
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/32
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/33
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/34
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/35
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/36
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/37
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/38
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/39
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/100
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/101
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/102
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/103
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/104
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/105
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/106
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/107
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/108
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/109
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/110
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/111
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/112
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/113
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/114
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/115
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/116
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/117
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/118
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/119
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/120
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/121
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/122
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/123
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/124
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/125
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/126
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/127
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/128
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/129
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/130
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/131
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/132
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/133
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/134
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/135
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/136
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/137
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/138
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/139
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/140
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/141
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/142
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/143
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/144
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/145
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/146
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/147
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/148
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/149
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/150
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/151
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/152
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/153
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/154
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/155
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/156
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/157
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/158
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/159
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/160
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/161
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/162
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/163
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/164
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/165
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/166
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/167
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/168
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/169
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/170
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/171
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/172
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/173
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/174
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/175
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/176
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/177
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/178
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/179
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/180
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/181
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/182
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/183
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/184
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/185
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/186
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/187
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/188
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/189
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/190
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/191
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/192
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/193
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/194
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/195
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/196
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/197
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/198
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] OneLocalAtomicExplicitTest/OneLocalAtomicExplicitTest.Test/199
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(data.initialValue), &data.initialValue))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/one_local_atomic_explicit_ocl.cpp:75
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/20
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/21
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/22
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/23
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/24
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/25
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/26
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/27
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/28
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/29
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/30
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/31
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/32
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/33
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/34
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/35
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/36
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/37
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/38
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/39
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/100
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/101
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/102
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/103
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/104
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/105
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/106
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/107
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/108
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/109
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/110
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/111
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/112
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/113
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/114
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/115
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/116
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/117
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/118
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/119
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/120
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/121
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/122
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/123
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/124
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/125
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/126
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/127
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/128
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/129
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/130
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/131
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/132
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/133
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/134
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/135
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/136
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/137
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/138
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/139
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/140
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/141
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/142
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/143
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/144
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/145
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/146
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/147
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/148
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/149
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/150
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/151
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/152
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/153
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/154
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/155
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/156
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/157
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/158
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/159
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/160
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/161
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/162
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/163
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/164
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/165
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/166
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/167
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/168
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/169
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/170
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/171
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/172
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/173
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/174
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/175
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/176
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/177
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/178
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/179
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/180
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/181
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/182
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/183
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/184
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/185
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/186
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/187
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/188
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/189
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/190
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/191
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/192
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/193
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/194
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/195
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/196
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/197
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/198
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
+[  FAILED  ] SeparateAtomicsExplicitTest/SeparateAtomicsExplicitTest.Test/199
+FAILED assertion ASSERT_CL_SUCCESS(clSetKernelArg(kernel, 3, sizeof(arguments.atomicsPerCacheline.getSizeOf()), arguments.atomicsPerCacheline.getAddressOf()))
+	value: -51 (CL_INVALID_ARG_SIZE)
+	Location: /data/data/com.termux/files/home/compute-benchmarks/source/benchmarks/atomic_benchmark/implementations/ocl/separate_atomics_explicit_ocl.cpp:87
+
